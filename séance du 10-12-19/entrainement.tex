@@ -69,37 +69,32 @@ print(res)
 \end{comment}
 
 
-\section{Aidez CPUMons !! (niveau 2)}
-Le Kot associatif CPUMons a besoin d'aide ! 
+\section{Aidez CPUMons !!! (niveau 2)}
+Le Kot associatif CPUMons a besoin de votre aide! 
 
-La liste des membres commence à s'allonger et il serait judicieux d'établir un système de gestion de membre avant que cette liste devienne ingérable.
+La liste des membres commence à s'allonger et il serait judicieux d'établir un système de gestion des membres avant que cette liste ne soit trop grande.
 Pour cela nous avons besoin:
 \begin{itemize}
-\item D'un objet membre qui a comme caractéristiques: nom, prénom, adresse email umons, faculté, section, date d'inscription (sous la forme d'un nombre aammjj), son nombre de participation, ainsi que les dates auxquelles il a participé à un entraînement (aammjj).
-\item L'adresse email doit être construite sur base du prénom et du nom (prénom.nom@student.umons.ac.be).
+\item D'un objet "Membre" qui se caractérise par: un nom, un prénom, une adresse email UMons, une faculté, une section, une date d'inscription (sous la forme d'un nombre aammjj), son nombre de participation, ainsi que les dates auxquelles il a participé à un entraînement (aammjj).
+\item L'adresse email doit être construite sur base du prénom et du nom de l'étudiant (prénom.nom@student.umons.ac.be).
 \item On a besoin de connaître quels membres étaient présents à une date donnée ainsi que le nombre de membres présents à cette séance.
 \item Pour établir un graphique du nombre de membres présents à chaque date, on a besoin de connaître le nombre d'étudiants pour toutes les séances.
 \item Les membres seront stockés dans un tableau.
-\item On doit pouvoir ajouter, supprimer des membres du tableau.
+\item On doit pouvoir ajouter et supprimer des membres du tableau.
 \end{itemize}
 
-\section{classement en moyenne (niveau 1.5)}
+\section{Classement en moyenne (niveau 1.5)}
 Le but de cet exercice est de diviser une liste en deux sous-listes par rapport à la moyenne des élements de la liste de base
-\paragraph{exemple : }
-Soit L une liste : {2,4,95,7,32,-4,66,26,13} on peut calculer la moyenne qui est égale à 26.78 et donc les deux listes en sorties seront L1 : {2,4,7,-4,26,13} et L2 : {95,32,66}
-\paragraph{remarque : }
+\paragraph{Exemple: }
+Soit $L$ une liste: {2,4,95,7,32,-4,66,26,13}, on peut en calculer la moyenne qui est égale à 26.78 et donc, les deux listes en sorties seront $L_1$: {2,4,7,-4,26,13} et $L_2$ : {95,32,66}.
+\paragraph{Remarques/Restrictions: }
 \begin{itemize}
-\item la complexité doit être en maximum O($n^2$)
-\item Vous ne pouvez créer qu'une nouvelle liste et non deux.
-\item Si un élement est égal à la moyenne il doit apparaitre dans les deux listes
+\item La complexité doit être, au maximum, en $O(n^2)$;
+\item Vous ne pouvez créer qu'une nouvelle liste et non deux;
+\item Si un élément est égal à la moyenne, il doit apparaitre dans les deux listes.
 \end{itemize}
-
-
-
-\section{...}
-
-
-
+\paragraph{Challenge (niveau 3): }
+Votre algorithme doit être en $O(n \log (n))$, mais il vous est autorisé d'utiliser les instructions du type t$[2:5]$ (où t est une liste).
 
 
 \section{...}
@@ -112,8 +107,16 @@ Soit L une liste : {2,4,95,7,32,-4,66,26,13} on peut calculer la moyenne qui est
 
 
 
+
+
 \section{...}
 
+
+
+\section{Limiter le hasard... D'un jeu de hasard! (niveau 4)}
+Vous avez été engagé par la Compagnie des Probabilités pour l'Utilisation Modérée mais Onéreuse de Nos Sous afin d'étudier un jeu de hasard relativement simple et paillard: le "cul de chouette"\footnote{Nom tout aussi paillard}. Ce jeu se joue avec un nombre $N$ de dés à 6 faces ($1 \leqslant N \leqslant 10$) que l'on lance une fois (les dés n'étant évidemment pas truqués. De plus, l'important, dans ce jeu, ce sont les valeurs: en l'occurrence la somme des résultats des $N$ dés.\\
+Votre tâche est d'écrire un algorithme donnant le nombre de manières possibles d'obtenir un résultat $M$ ($N \leqslant M \leqslant 6N$). Pour ce faire, il vous est conseillé d'effectuer les calculs pour $N = 2 et 3$ afin de pouvoir généraliser la méthode.
+\paragraph{Remarque:} au vu de la faible valeur de $N$, il n'est pas nécessaire de se soucier de la complexité de l'algorithme créé.
 
 \section{Concours}
 Pour ceux qui veulent s'entraîner pour participer aux concours, voici quelques liens pour vous permettre de travailler sur ce qui vous intéresse à votre propre rythme:\\
