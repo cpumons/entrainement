@@ -1,0 +1,138 @@
+\documentclass[a4paper]{article}
+
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{amsmath, amssymb, amsthm, verbatim}
+\usepackage{IEEEtrantools}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks, linkcolor=blue]{hyperref}
+\usepackage{epigraph}
+\usepackage{mathrsfs}
+\usepackage[toc,page]{appendix}
+\usepackage{tikz-cd}
+\usepackage{xcolor}
+%Header stuff
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+%\fancyhf{}
+%\fancyhead[LE,RO]{\bfseries\thepage}
+%\fancyhead[LO]{\bfseries\rightmark}
+%\fancyhead[RE]{\bfseries\leftmark}
+%\renewcommand{\headrulewidth}{0.5pt}
+%\renewcommand{\footrulewidth}{0pt}
+%\setlength{\headheight}{14.85pt} % space for the rule
+%\fancypagestyle{plain}{%
+%  \fancyhead{} % get rid of headers on plain pages
+%  \renewcommand{\headrulewidth}{0pt} % and the line
+%}
+
+\title{Séance d'exercice 1}
+\author{CPUMons}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\paragraph{Avant de commencer...}
+Ce document comporte plusieurs exercices dont la difficulté est renseignée par un nombre et est \emph{globalement} croissante. Il est évidemment fortement recommandé de réfléchir au préalable sur papier avant de se lancer dans la partie implémentation.\\
+Répartition de la difficulté:
+\begin{itemize}
+\item Niveau 1: problème facile, ne nécessite pas de code complexe pour être mis en œuvre;
+\item Niveau 2: problème moyen, demande une réflexion plus poussée sur la présentation du code;
+\item Niveau 3: problème délicat, demande une réflexion poussée sur le problème en soi.
+\item Niveau 4: problème difficile.
+\end{itemize}
+\begin{comment}
+\section{Rappel (ou non): lire une entrée}
+
+\subsection{En théorie:}
+En Python3, la fonction \emph{input()} est utilisée pour lire une entrée via l'invite de commande.\\
+\emph{Entrée:} Aucun argument n'est obligatoire, mais on peut aussi fournir une chaîne de caractère qui sera affichée afin que l'utilisateur sache ce qu'il doit entrer.\\
+\emph{Sortie:} L'entrée fournie par l'utilisateur, sous forme de chaine de caractère (\emph{String}).\\
+Il est donc important de convertir la donnée retournée!
+\subsection{En pratique:}
+Tâche: additionner deux nombres donnés en entrée et afficher le résultat.\\
+\begin{verbatim}
+nbr1 = input("Votre premier nombre : ")
+nbr2 = input("Votre second nombre : ")
+res = int(nbr1) + int(nbr2)
+print(res)
+\end{verbatim}
+\end{comment}
+
+
+\section{Aidez CPUMons !! (niveau 2)}
+Le Kot associatif CPUMons a besoin d'aide ! 
+
+La liste des membres commence à s'allonger et il serait judicieux d'établir un système de gestion de membre avant que cette liste devienne ingérable.
+Pour cela nous avons besoin:
+\begin{itemize}
+\item D'un objet membre qui a comme caractéristiques: nom, prénom, adresse email umons, faculté, section, date d'inscription (sous la forme d'un nombre aammjj), son nombre de participation, ainsi que les dates auxquelles il a participé à un entraînement (aammjj).
+\item L'adresse email doit être construite sur base du prénom et du nom (prénom.nom@student.umons.ac.be).
+\item On a besoin de connaître quels membres étaient présents à une date donnée ainsi que le nombre de membres présents à cette séance.
+\item Pour établir un graphique du nombre de membres présents à chaque date, on a besoin de connaître le nombre d'étudiants pour toutes les séances.
+\item Les membres seront stockés dans un tableau.
+\item On doit pouvoir ajouter, supprimer des membres du tableau.
+\end{itemize}
+
+\section{classement en moyenne (niveau 1.5)}
+Le but de cet exercice est de diviser une liste en deux sous-listes par rapport à la moyenne des élements de la liste de base
+\paragraph{exemple : }
+Soit L une liste : {2,4,95,7,32,-4,66,26,13} on peut calculer la moyenne qui est égale à 26.78 et donc les deux listes en sorties seront L1 : {2,4,7,-4,26,13} et L2 : {95,32,66}
+\paragraph{remarque : }
+\begin{itemize}
+\item la complexité doit être en maximum O($n^2$)
+\item Vous ne pouvez créer qu'une nouvelle liste et non deux.
+\item Si un élement est égal à la moyenne il doit apparaitre dans les deux listes
+\end{itemize}
+
+
+
+\section{...}
+
+
+
+
+
+\section{...}
+
+
+
+
+
+\section{...}
+
+
+
+\section{...}
+
+
+\section{Concours}
+Pour ceux qui veulent s'entraîner pour participer aux concours, voici quelques liens pour vous permettre de travailler sur ce qui vous intéresse à votre propre rythme:\\
+\begin{enumerate}
+\item \href{http://www.france-ioi.org/algo/chapters.php}{FranceIOI}: nécessite de débloquer les premiers niveaux, mais recouvre une très grande variété d'algorithmes et de problèmes différents rangés par thématique;
+\item \href{https://www.isograd.com/FR/solutionconcours.php?contest_id=46&que_str_id=&reg_typ_id=2&fbclid=IwAR3A3eAVzJVquecv1_MaLoWCMhLxku8SxbQl_awOcJcDevuJQ2HZtNHmupg}{Isograd}: sur ce site, vous retrouverez de nombreux anciens concours dont, en particulier, les BattleDev précédentes qui constituent un \emph{excellent} point de départ dans le monde des concours;
+\item \href{https://codingcompetitions.withgoogle.com/codejam?fbclid=IwAR1gU6uObu-gYzAOAdsR4uvmBvfhImyiSUi1pMxEEXkPVFA6MTnWVZ1etT0}{Google Code Jam}: les énoncés des années précédentes y sont disponibles. Le niveau requis est, bien évidemment, progressif et les problèmes sont en général assez intéressants;
+\item \href{https://open.kattis.com/}{Kattis}: site reprenant de \emph{très} nombreux problèmes. Il vous est conseillé de tester un ou deux problèmes "triviaux" afin de bien vérifier si vous n'avez pas de problèmes avec les entrées et sorties ; puis, de passer aux faciles et, rapidement, aux moyens (les difficiles portant très bien leur nom).
+\end{enumerate}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
