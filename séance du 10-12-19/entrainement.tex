@@ -84,7 +84,7 @@ Pour cela nous avons besoin:
 \end{itemize}
 
 \section{Classement en moyenne (niveau 1.5)}
-Le but de cet exercice est de diviser une liste en deux sous-listes par rapport à la moyenne des élements de la liste de base
+Le but de cet exercice est de diviser une liste en deux sous-listes par rapport à la moyenne des élements de la liste de base.
 \paragraph{Exemple: }
 Soit $L$ une liste: {2,4,95,7,32,-4,66,26,13}, on peut en calculer la moyenne qui est égale à 26.78 et donc, les deux listes en sorties seront $L_1$: {2,4,7,-4,26,13} et $L_2$ : {95,32,66}.
 \paragraph{Remarques/Restrictions: }
@@ -93,28 +93,25 @@ Soit $L$ une liste: {2,4,95,7,32,-4,66,26,13}, on peut en calculer la moyenne qu
 \item Vous ne pouvez créer qu'une nouvelle liste et non deux;
 \item Si un élément est égal à la moyenne, il doit apparaitre dans les deux listes.
 \end{itemize}
-\paragraph{Challenge (niveau 3): }
+\paragraph{Challenge (niveau 2.75): }
 Votre algorithme doit être en $O(n \log (n))$, mais il vous est autorisé d'utiliser les instructions du type t$[2:5]$ (où t est une liste).
 
 
 \section{...}
 
+%TODO
 
+\section{Une histoire déjà vue... (niveau 2)}
 
+Dans une petite ville, comme il en existe tant d'autres, s'était implantée une gigantesque chocolaterie qui faisait vivre toute la région par son ampleur et son développement. En effet, la conjoncture économique courante avait été mise à mal par la pénultième crise financière survenue deux ans auparavant, mais qui n'avait été que doux euphémisme par rapport à celle de l'année suivante qui, bien qu'antithétique par son origine, avait fait de la ville le palliatif apanage de la misère... Tel un abject homoncule\footnote{Ce mot étant la seule raison pour laquelle ce texte n'est pas en vers.} devant le méprisable, mais inexorable zéphyr de la vie... Voici donc le contexte, somme toute commun mais malheureusement compréhensible, dans lequel s'était implantée cette grande chocolaterie: la Chocolaterie Préférée de l'Union des Médiocres Ouvriers Nouvellement Sous-employés.\\
+\par Un jour, le PDG annonça qu'un grand concours était lancé afin qu'un enfant puisse visiter la C.P.U.M.O.N.S.\footnote{Aucun lien de parenté avec votre kot-associatif préféré.}. Pour remporter le concours, il fallait trouver un ticket doré caché dans une des barres chocolatées de la société. Cependant, le PDG ajouta un indice: "Le ticket doré a été caché par mes soins dans une barre de chocolat, mais pas n'importe quelle barre! La somme récursive des chiffres de son numéro de série est la réponse à la vie, l'univers et tout le reste! Bonne chance pour le trouver!"
+\par Intrigué par le terme de "somme récursive", vous apprenez que c'est un calcul assez simple à faire: après avoir fait la somme de tous les chiffres du numéro de série, si le nombre obtenu a strictement plus de 2 chiffres, vous faites la somme récursive du nombre obtenu. Jusqu'à obtenir un nombre avec, au plus, deux chiffres.
+\par Vous décidez donc d'écrire un petit programme qui, étant donné le numéro de série d'une barre de chocolat, vous informe si cette barre a des chances d'être gagnante ou non...
 
-
-\section{...}
-
-
-
-
-
-\section{...}
-
-
+\paragraph{Challenge (niveau 3):} Obtenir une complexité dans le pire des cas en $O(n)$ où $n$ est le nombre de chiffres du numéro de série.
 
 \section{Limiter le hasard... D'un jeu de hasard! (niveau 4)}
-Vous avez été engagé par la Compagnie des Probabilités pour l'Utilisation Modérée mais Onéreuse de Nos Sous afin d'étudier un jeu de hasard relativement simple et paillard: le "cul de chouette"\footnote{Nom tout aussi paillard}. Ce jeu se joue avec un nombre $N$ de dés à 6 faces ($1 \leqslant N \leqslant 10$) que l'on lance une fois (les dés n'étant évidemment pas truqués. De plus, l'important, dans ce jeu, ce sont les valeurs: en l'occurrence la somme des résultats des $N$ dés.\\
+Vous avez été engagé par la Compagnie des Probabilités pour l'Utilisation Modérée mais Onéreuse de Nos Sous afin d'étudier un jeu de hasard relativement simple et paillard: le "cul de chouette"\footnote{Nom tout aussi paillard.}. Ce jeu se joue avec un nombre $N$ de dés à 6 faces ($1 \leqslant N \leqslant 10$) que l'on lance une fois (les dés n'étant évidemment pas truqués. De plus, l'important, dans ce jeu, ce sont les valeurs: en l'occurrence la somme des résultats des $N$ dés.\\
 Votre tâche est d'écrire un algorithme donnant le nombre de manières possibles d'obtenir un résultat $M$ ($N \leqslant M \leqslant 6N$). Pour ce faire, il vous est conseillé d'effectuer les calculs pour $N = 2 et 3$ afin de pouvoir généraliser la méthode.
 \paragraph{Remarque:} au vu de la faible valeur de $N$, il n'est pas nécessaire de se soucier de la complexité de l'algorithme créé.
 
