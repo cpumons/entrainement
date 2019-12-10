@@ -97,9 +97,26 @@ Soit $L$ une liste: {2,4,95,7,32,-4,66,26,13}, on peut en calculer la moyenne qu
 Votre algorithme doit être en $O(n \log (n))$, mais il vous est autorisé d'utiliser les instructions du type t$[2:5]$ (où t est une liste).
 
 
-\section{...}
+\section{Critique de l'exploitation animale dans les champs de salsifis. (niveau 2.5)}
 
+Votre aide est requise par la Corporation des Producteurs et Utilisateurs Mexicains d'Ornithorynques pour Nourrir des Salsifis. En effet, cette noble entreprise étudie l'efficacité des ornithorynques dans l'entretient des champs de salsifis au Mexique. La capacité de cet animal pour entretenir les champs de salsifis est, il faut l'avouer, fortement sous-estimée. De nombreuses études ont montré que des ornithorynques, bien positionnées dans un champ de salsifis, entretenaient parfaitement tous les salsifis proches d'eux.
 
+Vous avez été embauché par la C.P.U.M.O.N.S. pour leur fournir un algorithme leur permettant d'évaluer le nombre de plans de salsifis dont s'occupe un ensemble donné d'ornithorynques.
+
+Le champ est représenté par une grille carrée dont on vous donne la longueur du coté, $N$. Sur cette grille sont placés $M$ ornithorynques ($0 \leqslant M < N$). Sachant qu'un ornithorynque s'occupe de tous les plans de salsifis sur les 8 cases adjacentes à sa position, vous devez calculer le nombre de plans de salsifis qui peuvent être entretenus au maximum. Il est à noter que, le salsifis étant une plante très fragile, si plus d'un ornithorynque s'occupe d'un plan donné, celui-ci sera trop nourri et mourra malheureusement.
+
+\paragraph{Entrée :}
+\begin{itemize}
+\item Sur la première ligne, se trouvent les deux entiers $N$ et $M$;
+\item Les $M$ lignes suivantes contiennent chacune deux entiers représentant la position des $M$ ornithorynques (on suppose toutes les positions distinctes).
+\end{itemize}
+\paragraph{Sortie :}
+\begin{itemize}
+\item Le nombre maximal de plans de salsifis qui peuvent être entretenus par les ornithorynques.
+\end{itemize}
+
+\paragraph{Remarque :}
+Afin de rendre le problème un peu plus court, on suppose que les positions des ornithorynques sont toutes telles que les 8 cases adjacentes existent (donc qu'il n'y a pas d'ornithorynque en bord de champ).
 
 \section{Une histoire déjà vue... (niveau 2)}
 Dans une petite ville, comme il en existe tant d'autres, s'était implantée une gigantesque chocolaterie qui faisait vivre toute la région par son ampleur et son développement. En effet, la conjoncture économique courante avait été mise à mal par la pénultième crise financière survenue deux ans auparavant, mais qui n'avait été que doux euphémisme par rapport à celle de l'année suivante qui, bien qu'antithétique par son origine, avait fait de la ville le palliatif apanage de la misère; tel un abject homoncule\footnote{Ce mot étant la seule raison pour laquelle ce texte n'est pas en vers.} devant le méprisable, mais inexorable zéphyr de la vie... Voici donc le contexte, somme toute commun mais malheureusement compréhensible, dans lequel s'était implantée cette grande chocolaterie: la Chocolaterie Préférée de l'Union des Médiocres Ouvriers Nouvellement Sous-employés.\\
